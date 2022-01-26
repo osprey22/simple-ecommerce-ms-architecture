@@ -1,0 +1,19 @@
+create database customer_db;
+create database product_db;
+
+INSERT INTO CATEGORY VALUES(1, 'Mobiles, Computers');
+INSERT INTO CATEGORY VALUES(2, 'TV, Appliances, Electronics');
+INSERT INTO CATEGORY VALUES(3, 'Fashion');
+INSERT INTO CATEGORY VALUES(4, 'Home, Kitchen, Pets');
+INSERT INTO CATEGORY VALUES(5, 'Books');
+
+INSERT INTO product VALUES(1, 'Realme X7 Max', 27499, 1);
+INSERT INTO product VALUES(2, 'HP Pavilion AMD', 70999, 1);
+INSERT INTO product VALUES(3, 'Mi TV', 21999, 2);
+INSERT INTO product VALUES(4, 'BOSCH Topload 1000 RPM Washing Machine', 29999, 2);
+INSERT INTO product VALUES(5, 'Peter England Formal Shirt Black', 1999, 3);
+INSERT INTO product VALUES(6, 'Aquarium Tank', 3499, 4);
+INSERT INTO product VALUES(7, 'Effective Java 3rd Edition', 2999, 5);
+INSERT INTO product VALUES(8, 'Head First Design Patterns', 1599, 5);
+
+commit;

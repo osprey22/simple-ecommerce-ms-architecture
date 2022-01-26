@@ -1,0 +1,18 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: API-GATEWAY
+  config:
+    import: optional:configserver:http://localhost:8900
+  cloud:
+    gateway:
+      routes:        
+      - id: catalog-service
+        uri: lb://catalog-service
+        predicates: [Path=/products]
+        
+      - id: order-service
+        uri: lb://order-service
+        predicates: [Path=/orders]
